@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+
+<body>
+    <h1>This is a api fetching documentation</h1>
+    <script>
+        fetch("https://covid-193.p.rapidapi.com/statistics", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "covid-193.p.rapidapi.com",
+                    "x-rapidapi-key": "a88f2e68d8msh2cca769a24308f1p1dc36ejsn5be245ae1a77"
+                }
+            })
+            .then(response => {
+                console.log(response);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    </script>
+</body>
+
+</html>
